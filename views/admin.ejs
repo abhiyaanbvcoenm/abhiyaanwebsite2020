@@ -1,0 +1,191 @@
+<%- include("partials/header") %>
+
+<form>
+    <div class="jumbotron">
+    <h3>Occasion Settings</h3>
+    </div>
+    <select class="custom-select">
+        <option selected>Type of Ocasion</option>
+        <option value="1">News Element</option>
+        <option value="2">Day Element</option>
+        <option value="3">Event Element</option>
+        <option value="4">Departmental Fest Element</option>
+
+      </select>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Number of Such Ocasions</label>
+      <select class="form-control" id="exampleFormControlSelect1">
+        <% for(var i=0;i<10;i++){ %>
+        <option><%= i+1 %></option>
+        <% } %>    
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Description of the ocasion</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlFile1">Event Logo</label>
+        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+      </div>
+      <div class="form-group">
+        <label for="formControlRange">Excitement Intensity</label>
+        <input type="range" class="form-control-range" id="formControlRange">
+      </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Event Start Date</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Select Date">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Event End Date</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Select Date">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Registration Last Date</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Select Date">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Location of the Ocasion</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Contact Number (Gpay / Phonepay) phone number)</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Payment amount</label>
+            <select id="inputState" class="form-control">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputZip">Authority Name</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+          </div>
+        </div>
+        <hr>
+        <div class="jumbotron">
+            <h3>Theme Settings</h3>
+        </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Theme Name</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Theme type</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Theme Primary Color</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Theme Secondary Color</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputCity">Primary Light</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">Primary Dark</label>
+                <select id="inputState" class="form-control">
+                  <option selected>Choose...</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Text Color</label>
+                <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+              </div>
+            </div>
+            <hr>
+            <div class="jumbotron">
+                <h3>Header Settings</h3>
+            </div>
+            <select class="custom-select">
+                <option selected>Type of Navbar Element</option>
+                <option value="1">Navbar Left</option>
+                <option value="2">Navbar Right</option>
+              </select>
+            <div class="form-group">
+              <label for="exampleFormControlSelect1">Number of Navbar Elements(not more than 7)</label>
+              <select class="form-control" id="exampleFormControlSelect1">
+                <% for(var i=0;i<10;i++){ %>
+                <option><%= i+1 %></option>
+                <% } %>    
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Description of the Nav Element</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress2">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>             
+            <hr>
+            <div class="jumbotron">
+                <h3>Footer Settings</h3>
+            </div>
+        <button type="submit" class="btn btn-primary btn-lg">Apply Changes</button>
+  </form>
+<%- include("partials/footer") %>
